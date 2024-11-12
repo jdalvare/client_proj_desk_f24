@@ -1,0 +1,235 @@
+body {
+    margin: 1%;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #131516;
+    line-height: 1.6;
+}
+
+a {
+    font-size: 1.2rem;
+    color: #00274C;
+}
+
+a:focus, a:hover {
+    text-decoration: underline;
+}
+
+.skip {
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+.skip:focus {
+    background-color: #00274C;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+.active{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FFFFFF;
+    padding: 2px;
+}
+
+header, main, footer, nav {
+    display: grid;
+    gap: 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #00274C;
+    color: #FFFFFF;
+}
+
+header nav {
+    grid-row: 1;
+}
+
+header .title {
+    grid-row: 2;
+}
+
+header .image {
+    grid-row: 3;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    justify-items: center;
+    padding: 0;
+}
+
+nav ul li a {
+    padding: 0.5rem;
+    background-color: #FFCB05;
+    color: #131516;
+    border-radius: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    background-color: #00274C;
+    border-bottom: 3px solid #FFCB05;
+}
+
+main {
+    padding: 1rem;
+}
+
+main section {
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 1rem;
+    background-color: #00274C;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer a {
+    color: #FFCB05;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+form {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    font-size: 1.8rem;
+    color: #00274C;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form fieldset {
+    border: 1px solid #d1d1d1;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+form legend {
+    font-size: 1.5rem;
+    color: #131516;
+    padding: 0 0.5rem;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    color: #131516;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input[type="text"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    color: #131516;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus {
+    border-color: #00274C;
+    outline: none;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.radio-group p {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #131516;
+}
+
+form input[type="submit"] {
+    background-color: #00274C;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #FFCB05;
+    color: #131516;
+}
+
+.container404{
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    background-color: #FFCB05;
+}
+
+.container404 h1{
+    font-size: 200px;
+    color: #00274C;
+}
+
+.container404 a, .container404 p{
+    font-size: 50px;
+    color: #00274C;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        margin: 2%;
+    }
+
+    header {
+        font-size: 3rem;
+    }
+
+    nav ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+    }
+
+    main section {
+        padding: 2rem;
+    }
+
+    footer {
+        font-size: 1.5rem;
+    }
+}
